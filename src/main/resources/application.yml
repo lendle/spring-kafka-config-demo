@@ -1,0 +1,12 @@
+spring.cloud.stream.kafka.binder.configuration.value.serializer: io.confluent.kafka.streams.serdes.avro.SpecificAvroSerializer
+
+spring.kafka.producer.properties.schema.registry.url: http://localhost:8081
+
+
+#this config does not get applied if a destination (or maybe any property?) is set for a specific binding
+spring.cloud.stream.default.producer.useNativeEncoding: true
+
+spring.cloud.stream.bindings.output.destination: mytopic
+
+#if the following is uncommented, things will work.
+#spring.cloud.stream.bindings.output.producer.useNativeEncoding: true
