@@ -1,0 +1,8 @@
+{
+  "namespace": "com.example.demo",
+  "type": "record",
+  "name": "MyClass",
+  "fields": [
+    {"name": "value", "type": "long"}
+  ]
+}
